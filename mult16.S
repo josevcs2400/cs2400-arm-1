@@ -6,7 +6,7 @@
 		;		Use the two numbers as an example but write it so it works for any two 16-bit numbers.
 		;		Write the result in the provided "fill" word.
 		;		Indicate if there was a high-bit carry using the provided "fill" word.
-                ;
+		;
 		
 		;		Your code here
 main
@@ -37,8 +37,9 @@ doshift
 		str		R3, [R6]
 		end
 		
-		;51857,	62787 = 3255945459
-		;numbers	DCD		0b1101001, 0b1011010		; this works
-numbers	DCD		0b1100101010010001, 0b1111010101000011	; this doesn't work ???
+		;		numbers	DCD		0b1101001, 0b1011010		
+		;		51857, 62787 = 3255945459
+numbers	DCD		0b1100101010010001, 0b1111010101000011
+		;		result should be 11000010000100011100100011110011
 result	FILL		4
 carry	FILL		4
